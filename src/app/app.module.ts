@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -35,6 +35,7 @@ import { InformationComponent } from './components/sections/information/informat
 import { ImpressumComponent } from './components/impressum/impressum.component';
 import { DatenschutzComponent } from './components/datenschutz/datenschutz.component';
 import { RootComponent } from './components/root/root.component';
+import { SwiperComponent } from './components/sections/swiper/swiper.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { RootComponent } from './components/root/root.component';
     ImpressumComponent,
     DatenschutzComponent,
     RootComponent,
+    SwiperComponent,
   ],
   imports: [
     BrowserModule, //.withServerTransition({ appId: 'serverApp' }),
@@ -74,5 +76,6 @@ import { RootComponent } from './components/root/root.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}

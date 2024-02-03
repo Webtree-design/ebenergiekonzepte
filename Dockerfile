@@ -7,4 +7,4 @@ RUN npm install --force
 COPY . .
 EXPOSE 4003
 
-CMD ["node", "dist/webtreedesign/server/main.js"]
+CMD ["node", "dist/ebenergiekonzepte/server/main.js"]

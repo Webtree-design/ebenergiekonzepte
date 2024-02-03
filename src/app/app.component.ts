@@ -19,7 +19,7 @@ import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'webtreedesign';
+  title = 'ebenergiekonzepte';
   public toolbarStyle: any = 'ngStyleBefore';
   firmenmail = 'mail.de';
   width: number = 0;
@@ -57,8 +57,8 @@ export class AppComponent {
   async ngOnInit() {
     this.message = [];
     this.news = [];
-    await this.getMessage();
-    this.getNews();
+    // await this.getMessage();
+    // this.getNews();
     
   }
 

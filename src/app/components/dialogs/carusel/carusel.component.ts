@@ -42,7 +42,7 @@ export class CaruselComponent {
   //     thumbImage: '../../../../assets/Harley.png',
   //     alt: 'Harley',
   //     title: 'Harley',
-  //     src: 'www.demoone.webtreedesign.de',
+  //     src: 'www.demoone.ebenergiekonzepte.de',
   //   },
   //   {
   //     image: '../../../../assets/Juwelier.png',
@@ -65,7 +65,7 @@ export class CaruselComponent {
   //   if (this.isBrowser) {
   //     switch (event) {
   //       case 0:
-  //         window.location.href = 'https://demoone.webtreedesign.de';
+  //         window.location.href = 'https://demoone.ebenergiekonzepte.de';
   //         break;
   //       case 1:
   //         window.location.href = 'https://juwelier-breuch.de';

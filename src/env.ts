@@ -1,6 +1,6 @@
 export const env = {
-  apiURL: 'https://dashboard.webtreedesign.de:5500', //https://dashboard.webtreedesign.de:5500  //http://localhost:5500
-  user: 'webtreedesign',
+  apiURL: 'https://dashboard.ebenergiekonzepte.de:5500', //https://dashboard.ebenergiekonzepte.de:5500  //http://localhost:5500
+  user: 'ebenergiekonzepte',
 
   MailapiURL: 'https://webtree-design.de:5001',
   eEmailTo: 'info@webtree-design.de',

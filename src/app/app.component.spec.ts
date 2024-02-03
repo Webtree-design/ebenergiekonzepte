@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'webtreedesign'`, () => {
+  it(`should have as title 'ebenergiekonzepte'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('webtreedesign');
+    expect(app.title).toEqual('ebenergiekonzepte');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('webtreedesign app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ebenergiekonzepte app is running!');
   });
 });
