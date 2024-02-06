@@ -1,0 +1,15 @@
+.member {
+    max-width: 500px;
+    .mehrErfahren {
+      margin-top: 16px;
+      background-color: var(--accent);
+      color: var(--background);
+      transition: var(--longTransition);
+    }
+    .mehrErfahren:hover {
+      background-color: var(--accent);
+      color: var(--second);
+      transition: var(--longTransition);
+    }
+  }
+  

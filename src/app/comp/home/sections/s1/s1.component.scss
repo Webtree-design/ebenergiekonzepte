@@ -1,0 +1,45 @@
+.startSection {
+  // z-index: 10;
+  flex-wrap: wrap;
+  .member {
+    width: 240px;
+    min-height: 160px;
+    height: auto;
+    background-color: var(--accent);
+    color: var(--background);
+    transition: var(--longTransition);
+    .mehrErfahren {
+      transition: var(--longTransition);
+      fill: var(--accent);
+      height: 0px !important;
+    }
+    svg {
+      margin-bottom: 4px;
+    }
+  }
+  .member:hover {
+    transition: var(--longTransition);
+    transform: scale(103%);
+    background-color: var(--accent);
+    color: var(--background);
+    min-height: 160px;
+    height: auto;
+    .mehrErfahren {
+      transition: var(--longTransition);
+      fill: var(--second);
+      height: 24px !important;
+    }
+  }
+}
+
+.mehrErfahrenSingle {
+  margin-top: 16px;
+  background-color: var(--accent);
+  color: var(--background);
+  transition: var(--longTransition);
+}
+.mehrErfahrenSingle:hover {
+  background-color: var(--accent);
+  color: var(--second);
+  transition: var(--longTransition);
+}

@@ -51,17 +51,17 @@ body {
 }
 body {
   margin: 0;
-  font-family: "Forum", sans-serif;
-  // color: var(--textcolor);
+  font-family: "Times New Roman", Times, serif;
+  color: var(--textcolor);
   background-color: var(--background);
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-@font-face {
-  font-family: "Forum";
-  src: url("./assets/webtree/Forum-Regular.ttf") format("truetype");
-  font-weight: bold;
-}
+// @font-face {
+//   font-family: "Forum";
+//   src: url("./assets/webtree/Forum-Regular.ttf") format("truetype");
+//   font-weight: bold;
+// }
 
 :root {
   --shortTransition: 0.3s;
@@ -81,7 +81,7 @@ body {
   --background: #ecfffe;
   --background-X: #ecfffe8a;
 
-  --toolbar: #ededed;
+  --toolbar: rgb(251, 251, 251);
   --textcolor: #212121;
 
   --fontsize: 20px;
@@ -132,33 +132,10 @@ body {
 }
 // end region scrollbar
 
-@media (min-width: 1024px) {
-  .slicedImages:hover {
-    transition: var(--longTransition);
-    gap: 0;
-    img {
-      margin-top: 14.3px;
-      margin-bottom: 14.3px;
-      transition: var(--longTransition);
-    }
-    .imgLeft {
-      border-top-right-radius: 0px 0px;
-      border-bottom-right-radius: 0px 0px;
-    }
-    .imgRight {
-      border-top-left-radius: 0px 0px;
-      border-bottom-left-radius: 0px 0px;
-    }
-  }
-}
-
-.slicedImages {
-  transition: var(--longTransition);
-  img {
-    transition: var(--longTransition);
-  }
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+.divider {
+  border-bottom: 5px dotted var(--accent);
 }

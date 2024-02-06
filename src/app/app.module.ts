@@ -37,6 +37,11 @@ import { DatenschutzComponent } from './components/datenschutz/datenschutz.compo
 import { RootComponent } from './components/root/root.component';
 import { SwiperComponent } from './components/sections/swiper/swiper.component';
 import { Swiper2Component } from './components/sections/swiper2/swiper2.component';
+import { HomeComponent } from './comp/home/home.component';
+import { S1Component } from './comp/home/sections/s1/s1.component';
+import { S2Component } from './comp/home/sections/s2/s2.component';
+import { S3Component } from './comp/home/sections/s3/s3.component';
+import { S4Component } from './comp/home/sections/s4/s4.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +59,11 @@ import { Swiper2Component } from './components/sections/swiper2/swiper2.componen
     RootComponent,
     SwiperComponent,
     Swiper2Component,
+    HomeComponent,
+    S1Component,
+    S2Component,
+    S3Component,
+    S4Component,
   ],
   imports: [
     BrowserModule, //.withServerTransition({ appId: 'serverApp' }),
