@@ -1,72 +1,11 @@
-<!-- <div #section class="mx-auto max-w-screen-xl">
-  <ng-image-slider
-    [autoSlide]="{ interval: 0, stopOnHover: true }"
-    [animationSpeed]="0"
-    [imageSize]="{ width: 320, height: 500, space: 0 }"
-    [imagePopup]="false"
-    [images]="imageObject"
-    #image
-    [infinite]="true"
-    (imageClick)="imageSliderClick($event)"
-    [showArrow]="false"
-  ></ng-image-slider>
-  <div class="naviagtion flex justify-end items-center px-6">
-    <button class="flex justify-center items-center" (click)="prevImageClick()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="24"
-        viewBox="0 -960 960 960"
-        width="24"
-      >
-        <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
-      </svg>
-    </button>
-    <button class="flex justify-center items-center" (click)="nextImageClick()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="24"
-        viewBox="0 -960 960 960"
-        width="24"
-      >
-        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
-      </svg>
-    </button>
-  </div>
-</div> -->
-
-<div class="mx-auto max-w-screen-xl">
-  <div class="grid gap-6 md:grid-cols-3">
-    <div
-      class="zoom relative overflow-hidden rounded-md bg-cover bg-no-repeat shadow-md dark:shadow-black/20 bg-[50%]"
-      data-te-ripple-init
-      data-te-ripple-color="dark"
-    >
-      <img
-        src="../../../../assets/Juwelier.png"
-        class="w-full align-middle transition duration-300 ease-linear"
-      />
-    </div>
-
-    <div
-      class="zoom relative overflow-hidden rounded-md bg-cover bg-no-repeat shadow-md dark:shadow-black/20 bg-[50%]"
-      data-te-ripple-init
-      data-te-ripple-color="dark"
-    >
-      <img
-        src="../../../../assets/Harley.png"
-        class="w-full align-middle transition duration-300 ease-linear"
-      />
-    </div>
-
-    <div
-      class="zoom relative overflow-hidden rounded-md bg-cover bg-no-repeat shadow-md dark:shadow-black/20 bg-[50%]"
-      data-te-ripple-init
-      data-te-ripple-color="dark"
-    >
-      <img
-        src="../../../../assets/Solar.png"
-        class="w-full align-middle transition duration-300 ease-linear"
-      />
-    </div>
-  </div>
-</div>
+<swiper-container class="mySwiper" init="false">
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+  <swiper-slide>Slide 4</swiper-slide>
+  <swiper-slide>Slide 5</swiper-slide>
+  <swiper-slide>Slide 6</swiper-slide>
+  <swiper-slide>Slide 7</swiper-slide>
+  <swiper-slide>Slide 8</swiper-slide>
+  <swiper-slide>Slide 9</swiper-slide>
+</swiper-container>

@@ -12,7 +12,12 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $ebenergiekonzepte-primary: mat.define-palette(mat.$indigo-palette);
-$ebenergiekonzepte-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$ebenergiekonzepte-accent: mat.define-palette(
+  mat.$pink-palette,
+  A200,
+  A100,
+  A400
+);
 
 // The warn palette is optional (defaults to red).
 $ebenergiekonzepte-warn: mat.define-palette(mat.$red-palette);
@@ -48,7 +53,7 @@ body {
   margin: 0;
   font-family: "Forum", sans-serif;
   // color: var(--textcolor);
-  background-color: var(--toolbar);
+  background-color: var(--background);
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
@@ -64,17 +69,20 @@ body {
 
   // --accent: #9AC0D4;
   // --second: #28408b;
-  --accent: rgb(35, 109, 85);
-  --second: #1a4954;
+  --accent: #204baa;
+  --second: #ef9f3c;
 
-  --accent-X: #236d5590;
-  --second-X: #1a495490;
+  --accent-X: rgba(32, 76, 170, 0.8);
+  --second-X: rgb(239, 159, 60, 0.8);
 
-  --background: #f5f3ef;
-  --toolbar: rgb(243, 240, 235);
+  --accent-XX: rgba(32, 76, 170, 0.3);
+  --second-XX: rgb(239, 159, 60, 0.3);
+
+  --background: #ecfffe;
+  --background-X: #ecfffe8a;
+
+  --toolbar: #ededed;
   --textcolor: #212121;
-
-  --background-X: #9394964b;
 
   --fontsize: 20px;
 }

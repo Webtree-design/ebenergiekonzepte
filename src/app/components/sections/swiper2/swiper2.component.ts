@@ -10,11 +10,11 @@ import { Swiper } from 'swiper/types';
 import { PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 @Component({
-  selector: 'app-ueberuns',
-  templateUrl: './ueberuns.component.html',
-  styleUrls: ['./ueberuns.component.scss'],
+  selector: 'app-swiper2',
+  templateUrl: './swiper2.component.html',
+  styleUrls: ['./swiper2.component.scss'],
 })
-export class UeberunsComponent {
+export class Swiper2Component {
   @ViewChild('swiperRef')
   swiperRef: ElementRef | undefined;
   swiper?: Swiper;

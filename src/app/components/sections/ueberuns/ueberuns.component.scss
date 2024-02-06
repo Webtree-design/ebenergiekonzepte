@@ -1,27 +1,13 @@
-//Section 2
-
-.team {
-  .member:hover {
-    transform: translate(0, -10px);
+.member {
+  button {
+    margin-top: 16px;
+    background-color: var(--accent);
+    color: var(--background);
     transition: var(--longTransition);
-    box-shadow: 0 10px 15px -3px rgb(32, 33, 36);
+  }
+  button:hover {
+    background-color: var(--accent);
+    color: var(--second);
+    transition: var(--longTransition);
   }
 }
-
-.member {
-  background-color: var(--background);
-}
-@media (max-width: 380px) {
-  ::ng-deep .header {
-    word-break: break-all !important;
-  }
-}
-.member {
-  transition: var(--longTransition);
-  text-align: center;
-}
-
-* {
-  color: var(--textcolor);
-}
-

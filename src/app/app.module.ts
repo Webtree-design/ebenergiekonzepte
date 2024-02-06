@@ -36,6 +36,7 @@ import { ImpressumComponent } from './components/impressum/impressum.component';
 import { DatenschutzComponent } from './components/datenschutz/datenschutz.component';
 import { RootComponent } from './components/root/root.component';
 import { SwiperComponent } from './components/sections/swiper/swiper.component';
+import { Swiper2Component } from './components/sections/swiper2/swiper2.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { SwiperComponent } from './components/sections/swiper/swiper.component';
     DatenschutzComponent,
     RootComponent,
     SwiperComponent,
+    Swiper2Component,
   ],
   imports: [
     BrowserModule, //.withServerTransition({ appId: 'serverApp' }),
