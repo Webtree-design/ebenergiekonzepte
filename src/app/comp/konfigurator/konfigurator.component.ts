@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-
+import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
+import { KontaktService } from 'src/app/services/kontakt.service';
+import { env } from 'src/env';
 @Component({
   selector: 'app-konfigurator',
   templateUrl: './konfigurator.component.html',
@@ -12,22 +14,30 @@ export class KonfiguratorComponent {
   public progress: number;
   public steps: number = 9;
   public form: FormData = {
-    Wo: '',
-    Wie: '',
+    Hausart: '',
+    Nutzen: '',
     Suedlich: '',
     Flaeche: '',
     kaufenMieten: '',
     stromspeicher: '',
     dachalter: '',
     plz: '',
-    kontakt: {
-      name: '',
-      email: '',
-      tel: '',
-    },
+    tel: '',
   };
-  constructor(private _formBuilder: FormBuilder) {
+  constructor(
+    private _formBuilder: FormBuilder,
+    public snackBar: MatSnackBar,
+    public kontactService: KontaktService
+  ) {
     this.progress = 0;
+  }
+  openSnackBar(message: string) {
+    let config = new MatSnackBarConfig();
+    config.panelClass = ['custom-snackbar'];
+    config.horizontalPosition = 'start';
+    config.verticalPosition = 'bottom';
+    config.duration = 3000;
+    this.snackBar.open(message, '', config);
   }
 
   firstFormGroup = this._formBuilder.group({
@@ -79,9 +89,6 @@ export class KonfiguratorComponent {
 
   Senden() {
     if (this.nineFormGroup.valid) {
-      this.form.Wo = '123';
-      console.log(this.form);
-
       const oneOption = this.firstFormGroup.get('selectedOption')!.value;
       const twoOption = this.secondFormGroup.get('selectedOption')!.value;
       const threeOption = this.thirdFormGroup.get('selectedOption')!.value;
@@ -96,34 +103,43 @@ export class KonfiguratorComponent {
       const nineOptionEmail = this.nineFormGroup.get('email')!.value;
       const nineOptionBox = this.nineFormGroup.get('box')!.value;
 
-      console.log(oneOption);
-      console.log(twoOption);
-      console.log(threeOption);
-      console.log(fourOption);
-      console.log(fiveOption);
-      console.log(sixOption);
-      console.log(sevenOption);
-      console.log(eightOption);
-      console.log(nineOptionName);
-      console.log(nineOptionTel);
-      console.log(nineOptionEmail);
-      console.log(nineOptionBox);
+      if (oneOption) this.form.Hausart = oneOption;
+      if (twoOption) this.form.Nutzen = twoOption;
+      if (threeOption) this.form.Suedlich = threeOption;
+      if (fourOption) this.form.Flaeche = fourOption;
+      if (fiveOption) this.form.kaufenMieten = fiveOption;
+      if (sixOption) this.form.stromspeicher = sixOption;
+      if (sevenOption) this.form.dachalter = sevenOption;
+      if (eightOption) this.form.plz = eightOption;
+      if (nineOptionTel) this.form.tel = nineOptionTel;
+
+      const form: any = {
+        eName: nineOptionName,
+        eEmail: nineOptionEmail,
+        eMessage: JSON.stringify(this.form),
+        eBetreff: 'Konfigurator Anfrage',
+        eEmailTo: env.eEmailTo,
+        eCompany: env.eCompany,
+        SMTPMail: env.SMTPMail,
+      };
+
+      this.kontactService.createEmail(form).subscribe((res) => {
+        this.openSnackBar('Email gesendet');
+      });
     }
   }
+
+  createEmail() {}
 }
 
 interface FormData {
-  Wo: string;
-  Wie: string;
+  Hausart: string;
+  Nutzen: string;
   Suedlich: string;
   Flaeche: string;
   kaufenMieten: string;
   stromspeicher: string;
   dachalter: string;
   plz: string;
-  kontakt: {
-    name: string;
-    email: string;
-    tel: string;
-  };
+  tel: string;
 }

@@ -7,7 +7,6 @@
       font-weight: bold;
       transition: 0.1s;
       font-weight: 800;
-      color: var(--textcolor);
       transition: var(--shortTransition);
     }
     a:hover {
@@ -55,27 +54,6 @@
   // -webkit-box-shadow: 0px 10px 20px 20px rgba(255, 255, 255, 0.303);
   // -moz-box-shadow: 0px 10px 20px 20px rgba(255, 255, 255, 0.303);
   // box-shadow: 0px 10px 20px 20px rgba(255, 255, 255, 0.303);
-}
-
-.oneActive {
-  color: var(--accent) !important;
-  transition: var(--shortTransition);
-}
-.twoActive {
-  color: var(--accent) !important;
-  transition: var(--shortTransition);
-}
-.threeActive {
-  color: var(--accent) !important;
-  transition: var(--shortTransition);
-}
-.fourActive {
-  color: var(--accent) !important;
-  transition: var(--shortTransition);
-}
-.fiveActive {
-  color: var(--accent) !important;
-  transition: var(--shortTransition);
 }
 
 ::ng-deep mat-snack-bar-container {

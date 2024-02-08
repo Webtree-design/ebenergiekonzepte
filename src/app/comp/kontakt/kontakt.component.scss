@@ -34,6 +34,10 @@
       margin: auto !important;
     }
   }
+
+  .mat-mdc-snack-bar-label .mdc-snackbar__label {
+    color: var(--toolbar) !important;
+  }
 }
 
 .senden-btn {

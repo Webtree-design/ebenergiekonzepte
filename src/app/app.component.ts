@@ -11,6 +11,7 @@ import { PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -38,7 +39,8 @@ export class AppComponent {
     private router: Router,
     private elementRef: ElementRef,
     public snackBar: MatSnackBar,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    public meta: Meta
   ) {
     // router.navigateByUrl('start');
   }
@@ -54,11 +56,50 @@ export class AppComponent {
   }
 
   async ngOnInit() {
+    this.addMetaTags();
     this.message = [];
     this.news = [];
     await this.getMessage();
     this.getNews();
-    
+  }
+
+  addMetaTags() {
+    this.meta.addTags([
+      {
+        name: 'titel',
+        content: 'EB Energiekonzepte',
+      },
+      {
+        name: 'description',
+        content:
+          'Kontaktieren Sie uns für eine schnelle Terminabsprache | EB-Energiekonzepte GmbH | Westring 6d Dissen am Teutoburger Wald | Gerne beantworten wir Fragen rund um Ihr Energie-Projekt | Jetzt Termin vereinbaren und beraten lassen!',
+      },
+      {
+        name: 'keywords',
+        content:
+          'Solarenergie, Photovoltaik, Solaranlagen, Solarzellen, erneuerbare Energie, Solarstrom, Solarinstallation, Solartechnik, Solarpanel, nachhaltige Energie, Sonnenenergie, Solarmodule, Solarbetriebene Systeme, Solarfirmen, Solarindustrie, Umweltfreundliche Energie, grüne Energie, Solarheizung, Solarspeicher, Energieeffizienz, Solarberatung',
+      },
+      {
+        name: 'robots',
+        content: 'all',
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        name: 'geo.region',
+        content: 'DE',
+      },
+      {
+        name: 'organization',
+        content: 'EB-Energiekonzepte',
+      },
+      {
+        name: 'audience',
+        content: 'Interesse für Solaranlagen',
+      },
+    ]);
   }
 
   openSnackBar(message: string, action: string) {

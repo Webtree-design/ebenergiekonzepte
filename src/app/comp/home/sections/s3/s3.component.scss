@@ -1,5 +1,8 @@
 .animation-blocks {
   .member {
+    ::selection {
+      background: var(--second-X);
+    }
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     border-radius: 6px; /* 6px */
     background-color: transparent;
@@ -10,6 +13,7 @@
     backface-visibility: hidden;
     color: var(--background);
     .mehrErfahren {
+      display: none;
       position: absolute;
       transition: var(--longTransition);
       fill: var(--accent);
@@ -31,6 +35,7 @@
       transition: var(--longTransition);
     }
     .mehrErfahren {
+      display: none;
       transition: var(--longTransition);
       fill: var(--second);
       height: 24px !important;

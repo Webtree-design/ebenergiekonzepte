@@ -1,4 +1,4 @@
-<section style="background-color: var(--toolbar)">
+<section >
   <div class="mx-auto max-w-screen-xl px-6 py-12">
     <section class="text-left">
       <div class="max-w-[500px] lg:max-w-full mx-auto lg:mx-0">
@@ -22,7 +22,7 @@
           </div>
 
           <h5 class="mb-4 text-xl font-bold">
-            Anbieter von führenden Photovoltaik-Systemen
+            Über unsere Projekte
           </h5>
           <div class="divider w-1/12 my-4"></div>
           <div class="mb-8">
@@ -34,10 +34,12 @@
           </div>
 
           <button
+          [routerLink]="['/projekte']"
+          routerLinkActive="routeIsActive"
             type="button"
             class="mehrErfahrenSingle w-2/4 inline-block text-[var(--background)] rounded bg-[var(--accent)] shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0"
           >
-            Mehr erfahren
+            Projekt übersicht
           </button>
         </div>
         <div class="member mx-auto">
@@ -53,7 +55,7 @@
           </div>
 
           <h5 class="mb-4 text-xl font-bold">
-            Auf dem Weg zu sauberer Energie
+           Über unseren Konfigurator
           </h5>
           <div class="divider w-1/12 my-4"></div>
           <div class="mb-8">
@@ -66,10 +68,12 @@
           </div>
 
           <button
+          [routerLink]="['/konfigurator']"
+          routerLinkActive="routeIsActive"
             type="button"
             class="mehrErfahrenSingle w-2/4 inline-block text-[var(--background)] rounded bg-[var(--accent)] shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0"
           >
-            Mehr erfahren
+            Zum Konfigurator
           </button>
         </div>
         <div class="member mx-auto">
@@ -84,7 +88,7 @@
             />
           </div>
 
-          <h5 class="mb-4 text-xl font-bold">Erstklassiger Kundenservice</h5>
+          <h5 class="mb-4 text-xl font-bold">Über unseren Kundenservice</h5>
           <div class="divider w-1/12 my-4"></div>
           <div class="mb-8">
             Unsere Firma ist Ihr verlässlicher Partner für maßgeschneiderte
@@ -99,10 +103,12 @@
           </div>
 
           <button
+          [routerLink]="['/kontakt']"
+          routerLinkActive="routeIsActive"
             type="button"
             class="mehrErfahrenSingle w-2/4 inline-block text-[var(--background)] rounded bg-[var(--accent)] shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0"
           >
-            Mehr erfahren
+            Zum Kontakt
           </button>
         </div>
       </div>

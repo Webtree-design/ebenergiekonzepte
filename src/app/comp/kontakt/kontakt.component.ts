@@ -59,10 +59,10 @@ export class KontaktComponent {
       SMTPMail: env.SMTPMail,
     };
 
-
     this.kontactService.createEmail(form).subscribe((res) => {
-      htmlform.reset();
       this.openSnackBar('Email gesendet');
+      htmlform.reset();
+      this.nineFormGroup.reset();
     });
   }
 }
