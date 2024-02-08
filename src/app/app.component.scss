@@ -21,6 +21,10 @@
   background-color: var(--background);
 }
 
+.routeIsActive {
+  color: var(--accent) !important;
+}
+
 ::ng-deep .ngStyleAfter {
   background-color: var(--toolbar);
   transition: var(--longTransition);

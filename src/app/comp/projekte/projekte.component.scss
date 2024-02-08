@@ -1,0 +1,19 @@
+.member {
+  max-width: 500px;
+
+  .mehrErfahrenSingle {
+    background-color: var(--accent);
+    color: var(--background);
+    transition: var(--longTransition);
+  }
+  .mehrErfahrenSingle:hover {
+    background-color: var(--accent);
+    color: var(--second);
+    transition: var(--longTransition);
+  }
+  img {
+    height: 333.333px;
+    width: 500px;
+    object-fit: cover;
+  }
+}

@@ -45,6 +45,8 @@
   <section class="text-center absolute">
     <div class="startSection flex flex-row justify-center items-center gap-12">
       <button
+      [routerLink]="['/projekte']"
+      routerLinkActive="routeIsActive"
         type="button"
         class="member inline-block rounded bg-[var(--accent)] shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0"
       >
@@ -64,7 +66,7 @@
                 d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"
               />
             </svg>
-            <h3 class="text-2xl">Unser Konfigurator</h3>
+            <h3 class="text-2xl">Unsere Projekte</h3>
           </div>
           <svg
             class="mehrErfahren"
@@ -79,8 +81,11 @@
         </div>
       </button>
       <button
+      [routerLink]="['/konfigurator']"
+      routerLinkActive="routeIsActive"
         type="button"
         class="member inline-block rounded bg-[var(--accent)] shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0"
+        style="height: 190px !important; width: 260px !important"
       >
         <div class="flex flex-col justify-between items-center">
           <div class="my-2">
@@ -98,7 +103,8 @@
                 d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"
               />
             </svg>
-            <h3 class="text-2xl">Einblick in unsere Projekte</h3>
+            <h3 class="text-2xl mb-2">Solaranlagen Konfigurator</h3>
+            <p class="text-xs">Solaranlage in 3 Minuten planen!</p>
           </div>
           <svg
             class="mehrErfahren"
@@ -113,6 +119,8 @@
         </div>
       </button>
       <button
+      [routerLink]="['/kontakt']"
+      routerLinkActive="routeIsActive"
         type="button"
         class="member inline-block rounded bg-[var(--accent)] shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0"
       >
@@ -153,7 +161,7 @@
 <section class="mx-auto max-w-screen-xl px-6 py-12 lg:pt-36">
   <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
     <div class="basis-8/12 flex flex-col mb-auto">
-      <h2 class="text-2xl sm:text-3xl text-left font-semibold">
+      <h2 class="sm:text-4xl text-3xl text-left font-semibold">
         Solar ganz einfach!
       </h2>
       <div class="divider w-1/12 my-4"></div>
@@ -170,7 +178,7 @@
         Photovoltaikanlagen machen die Nutzung dieser Technologie äußerst
         attraktiv.
       </div>
-      <p class="mb-4">
+      <p class="mb-8">
         Unsere professionelle Beratung steht Ihnen stets zur Seite, damit Sie
         die richtigen Entscheidungen für Ihren digitalen Erfolg treffen.
       </p>

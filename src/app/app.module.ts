@@ -16,6 +16,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatExpansionModule } from '@angular/material/expansion';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 // slider
 // import { NgImageSliderModule } from 'ng-image-slider';
@@ -24,46 +26,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { StartComponent } from './components/sections/start/start.component';
-import { UeberunsComponent } from './components/sections/ueberuns/ueberuns.component';
-import { PopupComponent } from './components/dialogs/popup/popup.component';
-import { NewsComponent } from './components/sections/news/news.component';
-import { KontaktComponent } from './components/sections/kontakt/kontakt.component';
-import { ExpanderComponent } from './components/sections/expander/expander.component';
-import { CaruselComponent } from './components/dialogs/carusel/carusel.component';
-import { InformationComponent } from './components/sections/information/information.component';
-import { ImpressumComponent } from './components/impressum/impressum.component';
-import { DatenschutzComponent } from './components/datenschutz/datenschutz.component';
-import { RootComponent } from './components/root/root.component';
-import { SwiperComponent } from './components/sections/swiper/swiper.component';
-import { Swiper2Component } from './components/sections/swiper2/swiper2.component';
+
 import { HomeComponent } from './comp/home/home.component';
 import { S1Component } from './comp/home/sections/s1/s1.component';
 import { S2Component } from './comp/home/sections/s2/s2.component';
 import { S3Component } from './comp/home/sections/s3/s3.component';
 import { S4Component } from './comp/home/sections/s4/s4.component';
+import { ProjekteComponent } from './comp/projekte/projekte.component';
+import { KonfiguratorComponent } from './comp/konfigurator/konfigurator.component';
+import { KontaktComponent } from './comp/kontakt/kontakt.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StartComponent,
-    UeberunsComponent,
-    PopupComponent,
-    NewsComponent,
-    KontaktComponent,
-    ExpanderComponent,
-    CaruselComponent,
-    InformationComponent,
-    ImpressumComponent,
-    DatenschutzComponent,
-    RootComponent,
-    SwiperComponent,
-    Swiper2Component,
     HomeComponent,
     S1Component,
     S2Component,
     S3Component,
     S4Component,
+    ProjekteComponent,
+    KonfiguratorComponent,
+    KontaktComponent,
   ],
   imports: [
     BrowserModule, //.withServerTransition({ appId: 'serverApp' }),
@@ -85,6 +68,8 @@ import { S4Component } from './comp/home/sections/s4/s4.component';
     ReactiveFormsModule,
     MatSnackBarModule,
     MatExpansionModule,
+    MatRadioModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent],

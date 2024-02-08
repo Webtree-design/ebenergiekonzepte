@@ -8,6 +8,8 @@
     background-color: var(--accent);
     color: var(--background);
     transition: var(--longTransition);
+    will-change: transform;
+    backface-visibility: hidden;
     .mehrErfahren {
       transition: var(--longTransition);
       fill: var(--accent);
@@ -19,7 +21,9 @@
   }
   .member:hover {
     transition: var(--longTransition);
-    transform: scale(103%);
+    transform: scale(1.028);
+    will-change: transform;
+    backface-visibility: hidden;
     background-color: var(--accent);
     color: var(--background);
     min-height: 160px;
@@ -33,7 +37,6 @@
 }
 
 .mehrErfahrenSingle {
-  margin-top: 16px;
   background-color: var(--accent);
   color: var(--background);
   transition: var(--longTransition);

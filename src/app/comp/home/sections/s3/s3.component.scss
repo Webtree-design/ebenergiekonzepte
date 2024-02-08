@@ -14,8 +14,8 @@
       transition: var(--longTransition);
       fill: var(--accent);
       height: 0px !important;
-      right: 0;
-      bottom: 0;
+      right: 10px;
+      bottom: 10px;
     }
   }
   .member:hover {
@@ -35,6 +35,8 @@
       fill: var(--second);
       height: 24px !important;
       cursor: pointer;
+      right: 10px;
+      bottom: 10px;
     }
   }
   .svg {

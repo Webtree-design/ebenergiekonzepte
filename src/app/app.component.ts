@@ -6,7 +6,6 @@ import {
   ViewChild,
 } from '@angular/core';
 import { DataService } from './services/data.service';
-import { PopupComponent } from './components/dialogs/popup/popup.component';
 import { Dialog, DialogModule, DialogRef } from '@angular/cdk/dialog';
 import { PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
@@ -41,7 +40,7 @@ export class AppComponent {
     public snackBar: MatSnackBar,
     private route: ActivatedRoute
   ) {
-    router.navigateByUrl('start');
+    // router.navigateByUrl('start');
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -57,8 +56,8 @@ export class AppComponent {
   async ngOnInit() {
     this.message = [];
     this.news = [];
-    // await this.getMessage();
-    // this.getNews();
+    await this.getMessage();
+    this.getNews();
     
   }
 
