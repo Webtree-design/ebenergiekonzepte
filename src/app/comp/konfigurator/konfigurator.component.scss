@@ -13,14 +13,14 @@
       rgba(239, 249, 251, 0.5),
       rgb(239, 249, 251, 0.5)
     ),
-    url(../../../assets/ebenergiekonzepte/Solar_Sonnenuntergang.png);
+    url(../../../assets/ebenergiekonzepte/Titelbild_Feld_mit_Modulen.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .konfiguratorSection::before {
   content: "";
-  background: url(../../../assets/ebenergiekonzepte/Solar_Sonnenuntergang.png);
+  background: url(../../../assets/ebenergiekonzepte/Titelbild_Feld_mit_Modulen.png);
   opacity: 1; /* Adjust the opacity as needed */
   position: absolute;
   top: 0;

@@ -10,6 +10,9 @@
     transition: var(--longTransition);
     will-change: transform;
     backface-visibility: hidden;
+    svg {
+      transition: var(--longTransition);
+    }
     .mehrErfahren {
       transition: var(--longTransition);
       fill: var(--accent);
@@ -28,6 +31,10 @@
     color: var(--background);
     min-height: 160px;
     height: auto;
+    svg {
+      transition: var(--longTransition);
+      fill: var(--second);
+    }
     .mehrErfahren {
       transition: var(--longTransition);
       fill: var(--second);
