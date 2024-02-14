@@ -43,6 +43,7 @@ export class AppComponent {
     public meta: Meta
   ) {
     // router.navigateByUrl('start');
+    this.addMeta();
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -56,17 +57,17 @@ export class AppComponent {
   }
 
   async ngOnInit() {
-    this.addMetaTags();
+   
     this.message = [];
     this.news = [];
     await this.getMessage();
     this.getNews();
   }
 
-  addMetaTags() {
+  addMeta() {
     this.meta.addTags([
       {
-        name: 'titel',
+        name: 'title',
         content: 'EB Energiekonzepte',
       },
       {
@@ -81,7 +82,7 @@ export class AppComponent {
       },
       {
         name: 'robots',
-        content: 'all',
+        content: 'index, follow',
       },
       {
         name: 'viewport',
@@ -97,7 +98,7 @@ export class AppComponent {
       },
       {
         name: 'audience',
-        content: 'Interesse für Solaranlagen',
+        content: 'Unternehmen im Bereich erneuerbare Energien',
       },
     ]);
   }
