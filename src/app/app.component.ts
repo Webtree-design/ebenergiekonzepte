@@ -42,7 +42,6 @@ export class AppComponent {
     private route: ActivatedRoute,
     public meta: Meta
   ) {
-    // router.navigateByUrl('start');
     this.addMeta();
   }
 
@@ -57,7 +56,6 @@ export class AppComponent {
   }
 
   async ngOnInit() {
-   
     this.message = [];
     this.news = [];
     await this.getMessage();
@@ -99,6 +97,30 @@ export class AppComponent {
       {
         name: 'audience',
         content: 'Unternehmen im Bereich erneuerbare Energien',
+      },
+      //OG TAGS (Open Graph)
+      {
+        name: 'og:title',
+        content:
+          'EB Energiekonzepte - Solar & Photovoltaik aus Dissen und Ihrer Umgebungs',
+      },
+      {
+        name: 'og:description',
+        content:
+          'Kontaktieren Sie uns für eine schnelle Terminabsprache | EB-Energiekonzepte GmbH | Westring 6d Dissen am Teutoburger Wald | Gerne beantworten wir Fragen rund um Ihr Energie-Projekt | Jetzt Termin vereinbaren und beraten lassen!',
+      },
+      {
+        name: 'og:image',
+        content:
+          'https://demotwo.webtreedesign.de/assets/ebenergiekonzepte/Logo_Ai[508].png',
+      },
+      {
+        name: 'og:url',
+        content: 'https://demotwo.webtreedesign.de/start',
+      },
+      {
+        name: 'og:type',
+        content: 'website',
       },
     ]);
   }
