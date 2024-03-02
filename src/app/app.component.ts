@@ -20,7 +20,7 @@ import { Meta } from '@angular/platform-browser';
 })
 export class AppComponent {
   title = 'ebenergiekonzepte';
-  public toolbarStyle: any = 'ngStyleBefore';
+  public toolbarStyle: any = 'ngStyleAfter';
   firmenmail = 'mail.de';
   width: number = 0;
   public message: any = [];
@@ -48,7 +48,7 @@ export class AppComponent {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: any) {
     this.width = window.innerWidth;
-    this.checkElementViewport();
+    // this.checkElementViewport();
   }
   @HostListener('window:load', ['$event'])
   onLoad(event: any) {
@@ -144,16 +144,16 @@ export class AppComponent {
     this.dataService.getNews();
   }
 
-  private checkElementViewport() {
-    const myElement =
-      this.elementRef.nativeElement.querySelector('#routerOutlet');
+  // private checkElementViewport() {
+  //   const myElement =
+  //     this.elementRef.nativeElement.querySelector('#routerOutlet');
 
-    const bounding = myElement.getBoundingClientRect();
-    // console.log(bounding.top);
-    if (bounding.top < 0) {
-      this.toolbarStyle = 'ngStyleAfter';
-    } else {
-      this.toolbarStyle = 'ngStyleBefore';
-    }
-  }
+  //   const bounding = myElement.getBoundingClientRect();
+  //   // console.log(bounding.top);
+  //   if (bounding.top < 0) {
+  //     this.toolbarStyle = 'ngStyleAfter';
+  //   } else {
+  //     this.toolbarStyle = 'ngStyleBefore';
+  //   }
+  // }
 }

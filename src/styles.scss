@@ -51,17 +51,19 @@ body {
 }
 body {
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Montserrat";
   color: var(--textcolor);
   background-color: var(--background);
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-// @font-face {
-//   font-family: "Forum";
-//   src: url("./assets/webtree/Forum-Regular.ttf") format("truetype");
-//   font-weight: bold;
-// }
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/font/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --shortTransition: 0.3s;
@@ -79,7 +81,7 @@ body {
   --second-XX: rgb(239, 159, 60, 0.3);
 
   --background: #f2fffe;
-  --background-X: #ecfffe8a;
+  --background-X: #ffffff8a;
 
   --toolbar: rgb(251, 251, 251);
   --textcolor: #212121;
@@ -139,4 +141,3 @@ html {
 .divider {
   border-bottom: 5px dotted var(--accent);
 }
-
