@@ -5,6 +5,6 @@ COPY package.json .
 RUN npm install --force
 #RUN npm run build:ssr #run manually  
 COPY . .
-EXPOSE 4004
+EXPOSE 4006
 
 CMD ["node", "dist/ebenergiekonzepte/server/main.js"]

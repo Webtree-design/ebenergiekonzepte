@@ -124,12 +124,10 @@ export class KonfiguratorComponent {
       };
 
       this.kontactService.createEmail(form).subscribe((res) => {
-        this.openSnackBar('Email gesendet');
+        this.nineFormGroup.reset();
       });
     }
   }
-
-  createEmail() {}
 }
 
 interface FormData {

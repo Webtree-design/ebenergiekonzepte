@@ -43,6 +43,7 @@ export class KontaktComponent {
     this.snackBar.open(message, '', config);
   }
   public async createEmail(htmlform: any) {
+    console.log(1)
     // if (!this.nineFormGroup.valid) return;
     const nineOptionName = this.nineFormGroup.get('eName')!.value;
     const nineOptionMail = this.nineFormGroup.get('eEmail')!.value;
