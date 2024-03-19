@@ -180,3 +180,9 @@
     color: var(--toolbar) !important;
   }
 }
+
+::ng-deep mat-radio-button {
+  p {
+    cursor: pointer !important;
+  }
+}
