@@ -12,9 +12,9 @@ export class HomeComponent {
   }
 
   updateMeta() {
-    this.meta.updateTag({
-      name: 'title',
-      content: 'EB Energiekonzepte - start',
-    });
+    // this.meta.updateTag({
+    //   name: 'title',
+    //   content: 'EB Energiekonzepte - start',
+    // });
   }
 }

@@ -112,11 +112,11 @@ export class AppComponent {
       {
         name: 'og:image',
         content:
-          'https://demotwo.webtreedesign.de/assets/ebenergiekonzepte/Logo_Ai[508].png',
+          'https://eb-energiekonzepte.de/assets/ebenergiekonzepte/Logo_Ai[508].png',
       },
       {
         name: 'og:url',
-        content: 'https://demotwo.webtreedesign.de/start',
+        content: 'https://eb-energiekonzepte.de/start',
       },
       {
         name: 'og:type',
