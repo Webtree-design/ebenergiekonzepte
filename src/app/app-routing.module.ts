@@ -9,6 +9,7 @@ import { KontaktComponent } from './comp/kontakt/kontakt.component';
 
 import { DatenschutzComponent } from './comp/datenschutz/datenschutz.component';
 import { ImpressumComponent } from './comp/impressum/impressum.component';
+import { AgbComponent } from './comp/agb/agb.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/start', pathMatch: 'full' },
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'datenschutz',
     component: DatenschutzComponent,
+  },
+  {
+    path: 'agb',
+    component: AgbComponent,
   },
 ];
 

@@ -35,6 +35,7 @@ import { S4Component } from './comp/home/sections/s4/s4.component';
 import { ProjekteComponent } from './comp/projekte/projekte.component';
 import { KonfiguratorComponent } from './comp/konfigurator/konfigurator.component';
 import { KontaktComponent } from './comp/kontakt/kontakt.component';
+import { AgbComponent } from './comp/agb/agb.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { KontaktComponent } from './comp/kontakt/kontakt.component';
     ProjekteComponent,
     KonfiguratorComponent,
     KontaktComponent,
+    AgbComponent,
   ],
   imports: [
     BrowserModule, //.withServerTransition({ appId: 'serverApp' }),
